@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="889dc4d5-684d-478d-b519-20ecc5e71d18" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8586/AgentControlService/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="asyncperformancetest.wsdl" MetadataType="Wsdl" ID="ae269a83-7550-40b8-8a7f-4cc1f3591f1e" SourceId="1" SourceUrl="http://localhost:8586/AgentControlService/mex" />
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="918fdef8-4f1b-4d4f-ab48-b3c903a52aa1" SourceId="1" SourceUrl="http://localhost:8586/AgentControlService/mex" />
+    <MetadataFile FileName="asyncperformancetest.xsd" MetadataType="Schema" ID="e952dfd8-2319-4186-8d05-ff203c1e7a04" SourceId="1" SourceUrl="http://localhost:8586/AgentControlService/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="b5a8c0bd-87ee-4246-b2a0-b35252df6659" SourceId="1" SourceUrl="http://localhost:8586/AgentControlService/mex" />
+    <MetadataFile FileName="Arrays.xsd" MetadataType="Schema" ID="5d903e2c-e050-48c9-bca8-368ed9aa1749" SourceId="1" SourceUrl="http://localhost:8586/AgentControlService/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

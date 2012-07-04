@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="b3dc9195-c1d6-4154-ac31-df75552644f6" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8595/ConsoleService" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ConsoleService.xsd" MetadataType="Schema" ID="c4efba7f-b219-45f6-a447-e04d260bb88d" SourceId="1" SourceUrl="http://localhost:8595/ConsoleService?xsd=xsd3" />
+    <MetadataFile FileName="ConsoleService1.xsd" MetadataType="Schema" ID="a6a89ef6-e415-4e16-a796-07ba4c39f6a2" SourceId="1" SourceUrl="http://localhost:8595/ConsoleService?xsd=xsd2" />
+    <MetadataFile FileName="ConsoleService.wsdl" MetadataType="Wsdl" ID="a587c59b-7780-4c10-a26a-3acf6f60843d" SourceId="1" SourceUrl="http://localhost:8595/ConsoleService?wsdl" />
+    <MetadataFile FileName="ConsoleService1.wsdl" MetadataType="Wsdl" ID="81cfad72-1473-4a72-b962-a00aff4f98c6" SourceId="1" SourceUrl="http://localhost:8595/ConsoleService?wsdl=wsdl0" />
+    <MetadataFile FileName="ConsoleService2.xsd" MetadataType="Schema" ID="eb693aee-f038-4377-aec0-504091bf3be8" SourceId="1" SourceUrl="http://localhost:8595/ConsoleService?xsd=xsd4" />
+    <MetadataFile FileName="ConsoleService.disco" MetadataType="Disco" ID="bcd3f545-381b-4e6f-923b-9f5e69a73bc8" SourceId="1" SourceUrl="http://localhost:8595/ConsoleService?disco" />
+    <MetadataFile FileName="ConsoleService3.xsd" MetadataType="Schema" ID="f1315bb1-1c9a-4e19-9e65-72d421fd9c4d" SourceId="1" SourceUrl="http://localhost:8595/ConsoleService?xsd=xsd1" />
+    <MetadataFile FileName="ConsoleService4.xsd" MetadataType="Schema" ID="e4a35e67-1cce-4dc7-b968-624a2bc8b57f" SourceId="1" SourceUrl="http://localhost:8595/ConsoleService?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

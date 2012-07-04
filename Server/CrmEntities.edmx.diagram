@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="44c4a0294f274f8389c0a108c227fc36" Name="Diagram1">
+        <EntityTypeShape EntityType="CrmEntitiesModel.ActionResult" Width="1.5" PointX="15.75" PointY="35.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CrmEntitiesModel.Alert" Width="1.5" PointX="10.5" PointY="15.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CrmEntitiesModel.Alerts_Notification" Width="1.5" PointX="12.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CrmEntitiesModel.Alerts_Request" Width="1.5" PointX="12.75" PointY="15.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CrmEntitiesModel.AvLogRawDataSet" Width="1.5" PointX="10.5" PointY="23.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CrmEntitiesModel.AvLogReportDataSet" Width="1.5" PointX="25.25" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CrmEntitiesModel.AvUpdatesRawDataSet" Width="1.5" PointX="10.5" PointY="26.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CrmEntitiesModel.AvUpdatesReportDataSet" Width="1.5" PointX="25.25" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CrmEntitiesModel.CisConfigRawDataSet" Width="1.5" PointX="10.5" PointY="29.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CrmEntitiesModel.CisConfigReportDataSet" Width="1.5" PointX="25.25" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CrmEntitiesModel.ComputerDetailsRawDataSet" Width="1.5" PointX="10.5" PointY="33.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CrmEntitiesModel.ComputerDetailsReportDataSet" Width="1.5" PointX="25.25" PointY="15.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CrmEntitiesModel.ComputerGroup" Width="1.5" PointX="3" PointY="34.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CrmEntitiesModel.Computer" Width="1.5" PointX="8.25" PointY="32.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CrmEntitiesModel.DbInstallerInfo" Width="1.5" PointX="2.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CrmEntitiesModel.DefensePlusLogRawDataSet" Width="1.5" PointX="10.5" PointY="36.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CrmEntitiesModel.DefensePlusLogReportDataSet" Width="1.5" PointX="25.25" PointY="20.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CrmEntitiesModel.DiscoveryDataSet" Width="1.5" PointX="10.5" PointY="40.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CrmEntitiesModel.FirewallLogRawDataSet" Width="1.5" PointX="10.5" PointY="43.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CrmEntitiesModel.FirewallLogReportDataSet" Width="1.5" PointX="25.25" PointY="24" IsExpanded="true" />
+        <EntityTypeShape EntityType="CrmEntitiesModel.InfectedItemRawDataSet" Width="1.5" PointX="10.5" PointY="47.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CrmEntitiesModel.InfectedItemReportDataSet" Width="1.5" PointX="25.25" PointY="29" IsExpanded="true" />
+        <EntityTypeShape EntityType="CrmEntitiesModel.InstalledSoftwareRawDataSet" Width="1.5" PointX="10.5" PointY="50.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CrmEntitiesModel.InstalledSoftwareReportDataSet" Width="1.5" PointX="27.5" PointY="16.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CrmEntitiesModel.LicensedProduct" Width="1.5" PointX="3" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CrmEntitiesModel.License" Width="1.5" PointX="0.75" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CrmEntitiesModel.MalwareStatisticsReportDataSet" Width="1.5" PointX="25.25" PointY="33.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CrmEntitiesModel.MessageParam" Width="1.5" PointX="12.75" PointY="20.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CrmEntitiesModel.Package" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CrmEntitiesModel.Policy" Width="1.5" PointX="0.75" PointY="35.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CrmEntitiesModel.PolicyComponentInfo" Width="1.5" PointX="5.25" PointY="38.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CrmEntitiesModel.PolicyDeltaRawDataSet" Width="1.5" PointX="10.5" PointY="54" IsExpanded="true" />
+        <EntityTypeShape EntityType="CrmEntitiesModel.PolicyDeltaReportDataSet" Width="1.5" PointX="25.25" PointY="37.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CrmEntitiesModel.PolicyProductInfo" Width="1.5" PointX="3" PointY="38.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CrmEntitiesModel.PolicyStatusReportDataSet" Width="1.5" PointX="25.25" PointY="42" IsExpanded="true" />
+        <EntityTypeShape EntityType="CrmEntitiesModel.ProductConnection" Width="1.5" PointX="10.5" PointY="56.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CrmEntitiesModel.QuarantineItemRawDataSet" Width="1.5" PointX="10.5" PointY="60.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CrmEntitiesModel.QuarantineItemReportDataSet" Width="1.5" PointX="25.25" PointY="46.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CrmEntitiesModel.ReportManagerSetting" Width="1.5" PointX="5.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CrmEntitiesModel.ReportParameter" Width="1.5" PointX="25.25" PointY="50" IsExpanded="true" />
+        <EntityTypeShape EntityType="CrmEntitiesModel.Report" Width="1.5" PointX="23" PointY="29" IsExpanded="true" />
+        <EntityTypeShape EntityType="CrmEntitiesModel.ReportTarget" Width="1.5" PointX="25.25" PointY="53.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CrmEntitiesModel.ReportType" Width="1.5" PointX="20.75" PointY="30.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CrmEntitiesModel.RequestAnswerResult" Width="1.5" PointX="15" PointY="14.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CrmEntitiesModel.RequestAnswer" Width="1.5" PointX="18" PointY="17.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CrmEntitiesModel.RequestOption" Width="1.5" PointX="15" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CrmEntitiesModel.ScanLocation" Width="1.5" PointX="0.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CrmEntitiesModel.ScanProfile" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="CrmEntitiesModel.SequenceAction" Width="1.5" PointX="13.5" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CrmEntitiesModel.SequenceResult" Width="1.5" PointX="13.5" PointY="35.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CrmEntitiesModel.Sequence" Width="1.5" PointX="11.25" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CrmEntitiesModel.TaskResult" Width="1.5" PointX="15.75" PointY="29.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CrmEntitiesModel.Task" Width="1.5" PointX="13.5" PointY="28.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CrmEntitiesModel.TileConfiguration" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CrmEntitiesModel.TileLayout" Width="1.5" PointX="7.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CrmEntitiesModel.TopTenMalwaresReportDataSet" Width="1.5" PointX="25.25" PointY="56.25" IsExpanded="true" />
+        <AssociationConnector Association="CrmEntitiesModel.FK_SequenceResultActionResult" ManuallyRouted="false" />
+        <AssociationConnector Association="CrmEntitiesModel.FK_AlertsComputers" ManuallyRouted="false" />
+        <AssociationConnector Association="CrmEntitiesModel.FK_Notification_inherits_Alert" ManuallyRouted="false" />
+        <AssociationConnector Association="CrmEntitiesModel.FK_Request_inherits_Alert" ManuallyRouted="false" />
+        <AssociationConnector Association="CrmEntitiesModel.FK_RequestRequestAnswer" ManuallyRouted="false" />
+        <AssociationConnector Association="CrmEntitiesModel.FK_RequestRequestAnswerResult" ManuallyRouted="false" />
+        <AssociationConnector Association="CrmEntitiesModel.FK_RequestRequestOption" ManuallyRouted="false" />
+        <AssociationConnector Association="CrmEntitiesModel.FK_AvLogRawDataComputer" ManuallyRouted="false" />
+        <AssociationConnector Association="CrmEntitiesModel.FK_AvLogReportDataReport" ManuallyRouted="false" />
+        <AssociationConnector Association="CrmEntitiesModel.FK_AvUpdatesRawDataComputer" ManuallyRouted="false" />
+        <AssociationConnector Association="CrmEntitiesModel.FK_ReportAvUpdatesReportData" ManuallyRouted="false" />
+        <AssociationConnector Association="CrmEntitiesModel.FK_CisConfigRawDataComputer" ManuallyRouted="false" />
+        <AssociationConnector Association="CrmEntitiesModel.FK_CisConfigReportDataReport" ManuallyRouted="false" />
+        <AssociationConnector Association="CrmEntitiesModel.FK_ComputerDetailsRawDataComputer" ManuallyRouted="false" />
+        <AssociationConnector Association="CrmEntitiesModel.FK_InstalledSoftwareReportDataComputerDetailsReportData" ManuallyRouted="false" />
+        <AssociationConnector Association="CrmEntitiesModel.FK_ReportComputerDetailsReportData" ManuallyRouted="false" />
+        <AssociationConnector Association="CrmEntitiesModel.FK_ComputerGroupComputer" ManuallyRouted="false" />
+        <AssociationConnector Association="CrmEntitiesModel.FK_InternetPolicyComputerGroup" ManuallyRouted="false" />
+        <AssociationConnector Association="CrmEntitiesModel.FK_LocalPolicyComputerGroup" ManuallyRouted="false" />
+        <AssociationConnector Association="CrmEntitiesModel.FK_ComputerProductConnection" ManuallyRouted="false" />
+        <AssociationConnector Association="CrmEntitiesModel.FK_ComputerSequenceResult" ManuallyRouted="false" />
+        <AssociationConnector Association="CrmEntitiesModel.FK_DefensePlusLogRawDataComputer" ManuallyRouted="false" />
+        <AssociationConnector Association="CrmEntitiesModel.FK_DiscoveryDataComputers" ManuallyRouted="false" />
+        <AssociationConnector Association="CrmEntitiesModel.FK_FirewallLogRawDataComputer" ManuallyRouted="false" />
+        <AssociationConnector Association="CrmEntitiesModel.FK_InfectedItemRawDataComputer" ManuallyRouted="false" />
+        <AssociationConnector Association="CrmEntitiesModel.FK_InstalledSoftwareRawDataComputer" ManuallyRouted="false" />
+        <AssociationConnector Association="CrmEntitiesModel.FK_InternetPolicyComputer" ManuallyRouted="false" />
+        <AssociationConnector Association="CrmEntitiesModel.FK_LocalPolicyComputer" ManuallyRouted="false" />
+        <AssociationConnector Association="CrmEntitiesModel.FK_PolicyDeltaRawDataComputer" ManuallyRouted="false" />
+        <AssociationConnector Association="CrmEntitiesModel.FK_QuarantineItemRawDataComputer" ManuallyRouted="false" />
+        <AssociationConnector Association="CrmEntitiesModel.FK_DefensePlusLogReportDataReport" ManuallyRouted="false" />
+        <AssociationConnector Association="CrmEntitiesModel.FK_FirewallLogReportDataReport" ManuallyRouted="false" />
+        <AssociationConnector Association="CrmEntitiesModel.FK_InfectedItemReportDataReport" ManuallyRouted="false" />
+        <AssociationConnector Association="CrmEntitiesModel.FK_LicenseLicensedProduct" ManuallyRouted="false" />
+        <AssociationConnector Association="CrmEntitiesModel.FK_MalwareStatisticsReportDataReport" ManuallyRouted="false" />
+        <AssociationConnector Association="CrmEntitiesModel.FK_PolicyPolicyProductInfo" ManuallyRouted="false" />
+        <AssociationConnector Association="CrmEntitiesModel.FK_PolicyProductInfoPolicyComponentInfo" ManuallyRouted="false" />
+        <AssociationConnector Association="CrmEntitiesModel.FK_PolicyDeltaReportDataReport" ManuallyRouted="false" />
+        <AssociationConnector Association="CrmEntitiesModel.FK_ReportPolicyStatusReportData" ManuallyRouted="false" />
+        <AssociationConnector Association="CrmEntitiesModel.FK_QuarantineItemReportDataReport" ManuallyRouted="false" />
+        <AssociationConnector Association="CrmEntitiesModel.FK_ReportReportParameter" ManuallyRouted="false" />
+        <AssociationConnector Association="CrmEntitiesModel.FK_ReportReportTarget" ManuallyRouted="false" />
+        <AssociationConnector Association="CrmEntitiesModel.FK_ReportTypeReport" ManuallyRouted="false" />
+        <AssociationConnector Association="CrmEntitiesModel.FK_TopTenMalwaresReportDataReport" ManuallyRouted="false" />
+        <AssociationConnector Association="CrmEntitiesModel.FK_SequenceActionsSequences" ManuallyRouted="false" />
+        <AssociationConnector Association="CrmEntitiesModel.FK_SequenceSequenceResult" ManuallyRouted="false" />
+        <AssociationConnector Association="CrmEntitiesModel.FK_TaskResultSequenceResult" ManuallyRouted="false" />
+        <AssociationConnector Association="CrmEntitiesModel.FK_TasksSequences" ManuallyRouted="false" />
+        <AssociationConnector Association="CrmEntitiesModel.FK_TaskTaskResult" ManuallyRouted="false" />
+        <AssociationConnector Association="CrmEntitiesModel.MessageParams_AlertParam" ManuallyRouted="false" />
+        <AssociationConnector Association="CrmEntitiesModel.MessageParams_RequestAnswerParam" ManuallyRouted="false" />
+        <AssociationConnector Association="CrmEntitiesModel.ScanProfileLocations" ManuallyRouted="false" />
+        <AssociationConnector Association="CrmEntitiesModel.TaskComputerGroups" ManuallyRouted="false" />
+        <AssociationConnector Association="CrmEntitiesModel.TaskComputers" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

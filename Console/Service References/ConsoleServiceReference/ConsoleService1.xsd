@@ -1,0 +1,776 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/Server" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Server" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:8595/ConsoleService?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" />
+  <xs:import schemaLocation="http://localhost:8595/ConsoleService?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="ArrayOfComputer">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Computer" nillable="true" type="tns:Computer" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfComputer" nillable="true" type="tns:ArrayOfComputer" />
+  <xs:complexType name="Computer">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q1:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AgentPackageName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Alerts" nillable="true" type="tns:ArrayOfAlert" />
+          <xs:element minOccurs="0" name="AvBasesUpdateTime" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="AvBasesVersion" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AvLogRawDataSets" nillable="true" type="tns:ArrayOfAvLogRawDataSet" />
+          <xs:element minOccurs="0" name="AvUpdatesRawDataSets" nillable="true" type="tns:ArrayOfAvUpdatesRawDataSet" />
+          <xs:element minOccurs="0" name="BeingUninstalled" type="xs:boolean" />
+          <xs:element minOccurs="0" name="CisConfigRawDataSets" nillable="true" type="tns:ArrayOfCisConfigRawDataSet" />
+          <xs:element minOccurs="0" name="ComputerDetailsRawDataSets" nillable="true" type="tns:ArrayOfComputerDetailsRawDataSet" />
+          <xs:element minOccurs="0" name="ComputerGroup" nillable="true" type="tns:ComputerGroup" />
+          <xs:element minOccurs="0" name="ComputerGroupId" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="ComputerGroupReference" nillable="true" type="q1:EntityReferenceOfComputerGrouprvh1PiYS" />
+          <xs:element minOccurs="0" name="Created" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="DefensePlusLogRawDataSets" nillable="true" type="tns:ArrayOfDefensePlusLogRawDataSet" />
+          <xs:element minOccurs="0" name="DiscoveryDataSets" nillable="true" type="tns:ArrayOfDiscoveryDataSet" />
+          <xs:element minOccurs="0" name="DnsName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FirewallLogRawDataSets" nillable="true" type="tns:ArrayOfFirewallLogRawDataSet" />
+          <xs:element minOccurs="0" name="ForceRemoteMode" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IPAddress" nillable="true" type="xs:base64Binary" />
+          <xs:element minOccurs="0" name="Id" type="xs:long" />
+          <xs:element minOccurs="0" name="InfectedItemRawDataSets" nillable="true" type="tns:ArrayOfInfectedItemRawDataSet" />
+          <xs:element minOccurs="0" name="InstalledSoftwareRawDataSets" nillable="true" type="tns:ArrayOfInstalledSoftwareRawDataSet" />
+          <xs:element minOccurs="0" name="InternetPolicyId" type="xs:long" />
+          <xs:element minOccurs="0" name="IsLicensed" type="xs:boolean" />
+          <xs:element minOccurs="0" name="LocalPolicyId" type="xs:long" />
+          <xs:element minOccurs="0" name="MacAddress" nillable="true" type="xs:base64Binary" />
+          <xs:element minOccurs="0" name="Modified" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Policy" nillable="true" type="tns:Policy" />
+          <xs:element minOccurs="0" name="Policy1" nillable="true" type="tns:Policy" />
+          <xs:element minOccurs="0" name="Policy1Reference" nillable="true" type="q1:EntityReferenceOfPolicyrvh1PiYS" />
+          <xs:element minOccurs="0" name="PolicyDeltaRawDataSets" nillable="true" type="tns:ArrayOfPolicyDeltaRawDataSet" />
+          <xs:element minOccurs="0" name="PolicyLastPollDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="PolicyNonComplianceDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="PolicyReference" nillable="true" type="q1:EntityReferenceOfPolicyrvh1PiYS" />
+          <xs:element minOccurs="0" name="PolicyStatus" type="xs:short" />
+          <xs:element minOccurs="0" name="ProductConnections" nillable="true" type="tns:ArrayOfProductConnection" />
+          <xs:element minOccurs="0" name="QuarantineItemRawDataSets" nillable="true" type="tns:ArrayOfQuarantineItemRawDataSet" />
+          <xs:element minOccurs="0" name="RejectedConnectionDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="RemoteMode" type="xs:boolean" />
+          <xs:element minOccurs="0" name="SequenceResults" nillable="true" type="tns:ArrayOfSequenceResult" />
+          <xs:element minOccurs="0" name="Sid" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Tasks" nillable="true" type="tns:ArrayOfTask" />
+          <xs:element minOccurs="0" name="TimeStamp" nillable="true" type="xs:base64Binary" />
+          <xs:element minOccurs="0" name="Uid" type="ser:guid" />
+          <xs:element minOccurs="0" name="Visible" type="xs:boolean" />
+          <xs:element minOccurs="0" name="WarrantyStatus" type="xs:short" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Computer" nillable="true" type="tns:Computer" />
+  <xs:complexType name="ArrayOfAlert">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Alert" nillable="true" type="tns:Alert" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAlert" nillable="true" type="tns:ArrayOfAlert" />
+  <xs:complexType name="Alert">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q2:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Alerts_Notification" nillable="true" type="tns:Alerts_Notification" />
+          <xs:element minOccurs="0" name="Alerts_NotificationReference" nillable="true" type="q2:EntityReferenceOfAlerts_Notificationrvh1PiYS" />
+          <xs:element minOccurs="0" name="Alerts_Request" nillable="true" type="tns:Alerts_Request" />
+          <xs:element minOccurs="0" name="Alerts_RequestReference" nillable="true" type="q2:EntityReferenceOfAlerts_Requestrvh1PiYS" />
+          <xs:element minOccurs="0" name="Computer" nillable="true" type="tns:Computer" />
+          <xs:element minOccurs="0" name="ComputerId" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="ComputerReference" nillable="true" type="q2:EntityReferenceOfComputerrvh1PiYS" />
+          <xs:element minOccurs="0" name="CreatedTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Id" type="xs:long" />
+          <xs:element minOccurs="0" name="MessageParams" nillable="true" type="tns:ArrayOfMessageParam" />
+          <xs:element minOccurs="0" name="MessageTextAsXml" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MessageType_NameAsXml" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MessageType_Uid" nillable="true" type="ser:guid" />
+          <xs:element minOccurs="0" name="ProductName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ProductVersion" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ReceivedTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="TimeStamp" nillable="true" type="xs:base64Binary" />
+          <xs:element minOccurs="0" name="TransportType" type="xs:short" />
+          <xs:element minOccurs="0" name="Uid" type="ser:guid" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Alert" nillable="true" type="tns:Alert" />
+  <xs:complexType name="Alerts_Notification">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q3:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Alert" nillable="true" type="tns:Alert" />
+          <xs:element minOccurs="0" name="AlertReference" nillable="true" type="q3:EntityReferenceOfAlertrvh1PiYS" />
+          <xs:element minOccurs="0" name="Id" type="xs:long" />
+          <xs:element minOccurs="0" name="IsProcessed" type="xs:boolean" />
+          <xs:element minOccurs="0" name="NotificationLevel" type="xs:short" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Alerts_Notification" nillable="true" type="tns:Alerts_Notification" />
+  <xs:complexType name="Alerts_Request">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q4:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Alert" nillable="true" type="tns:Alert" />
+          <xs:element minOccurs="0" name="AlertReference" nillable="true" type="q4:EntityReferenceOfAlertrvh1PiYS" />
+          <xs:element minOccurs="0" name="AnswerSelectedTime" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="DefaultAnswerIndex" type="xs:int" />
+          <xs:element minOccurs="0" name="ExpireTime" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Id" type="xs:long" />
+          <xs:element minOccurs="0" name="LifeTime" type="xs:int" />
+          <xs:element minOccurs="0" name="RequestAnswerResults" nillable="true" type="tns:ArrayOfRequestAnswerResult" />
+          <xs:element minOccurs="0" name="RequestAnswers" nillable="true" type="tns:ArrayOfRequestAnswer" />
+          <xs:element minOccurs="0" name="RequestLevel" type="xs:short" />
+          <xs:element minOccurs="0" name="RequestOptions" nillable="true" type="tns:ArrayOfRequestOption" />
+          <xs:element minOccurs="0" name="SelectedAnswerIndex" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Alerts_Request" nillable="true" type="tns:Alerts_Request" />
+  <xs:complexType name="ArrayOfRequestAnswerResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RequestAnswerResult" nillable="true" type="tns:RequestAnswerResult" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRequestAnswerResult" nillable="true" type="tns:ArrayOfRequestAnswerResult" />
+  <xs:complexType name="RequestAnswerResult">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q5="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q5:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Alerts_Request" nillable="true" type="tns:Alerts_Request" />
+          <xs:element minOccurs="0" name="Alerts_RequestReference" nillable="true" type="q5:EntityReferenceOfAlerts_Requestrvh1PiYS" />
+          <xs:element minOccurs="0" name="Code" type="xs:int" />
+          <xs:element minOccurs="0" name="Id" type="xs:long" />
+          <xs:element minOccurs="0" name="Request_Id" type="xs:long" />
+          <xs:element minOccurs="0" name="TextAsXml" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RequestAnswerResult" nillable="true" type="tns:RequestAnswerResult" />
+  <xs:complexType name="ArrayOfRequestAnswer">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RequestAnswer" nillable="true" type="tns:RequestAnswer" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRequestAnswer" nillable="true" type="tns:ArrayOfRequestAnswer" />
+  <xs:complexType name="RequestAnswer">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q6="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q6:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Alerts_Request" nillable="true" type="tns:Alerts_Request" />
+          <xs:element minOccurs="0" name="Alerts_RequestReference" nillable="true" type="q6:EntityReferenceOfAlerts_Requestrvh1PiYS" />
+          <xs:element minOccurs="0" name="Id" type="xs:long" />
+          <xs:element minOccurs="0" name="MessageParams" nillable="true" type="tns:ArrayOfMessageParam" />
+          <xs:element minOccurs="0" name="RequestId" type="xs:long" />
+          <xs:element minOccurs="0" name="TextAsXml" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RequestAnswer" nillable="true" type="tns:RequestAnswer" />
+  <xs:complexType name="ArrayOfMessageParam">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MessageParam" nillable="true" type="tns:MessageParam" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMessageParam" nillable="true" type="tns:ArrayOfMessageParam" />
+  <xs:complexType name="MessageParam">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q7="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q7:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Alert" nillable="true" type="tns:Alert" />
+          <xs:element minOccurs="0" name="AlertReference" nillable="true" type="q7:EntityReferenceOfAlertrvh1PiYS" />
+          <xs:element minOccurs="0" name="DescriptionAsXml" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Id" type="xs:long" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RequestAnswer" nillable="true" type="tns:RequestAnswer" />
+          <xs:element minOccurs="0" name="RequestAnswerReference" nillable="true" type="q7:EntityReferenceOfRequestAnswerrvh1PiYS" />
+          <xs:element minOccurs="0" name="Value_TypeName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Value_ValueAsXml" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MessageParam" nillable="true" type="tns:MessageParam" />
+  <xs:complexType name="ArrayOfRequestOption">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RequestOption" nillable="true" type="tns:RequestOption" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRequestOption" nillable="true" type="tns:ArrayOfRequestOption" />
+  <xs:complexType name="RequestOption">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q8="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q8:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Alerts_Request" nillable="true" type="tns:Alerts_Request" />
+          <xs:element minOccurs="0" name="Alerts_RequestReference" nillable="true" type="q8:EntityReferenceOfAlerts_Requestrvh1PiYS" />
+          <xs:element minOccurs="0" name="CheckedByDefault" type="xs:boolean" />
+          <xs:element minOccurs="0" name="CheckedByUser" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Id" type="xs:long" />
+          <xs:element minOccurs="0" name="ItemIndex" type="xs:int" />
+          <xs:element minOccurs="0" name="RequestId" type="xs:long" />
+          <xs:element minOccurs="0" name="TextAsXml" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RequestOption" nillable="true" type="tns:RequestOption" />
+  <xs:complexType name="ArrayOfAvLogRawDataSet">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="AvLogRawDataSet" nillable="true" type="tns:AvLogRawDataSet" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAvLogRawDataSet" nillable="true" type="tns:ArrayOfAvLogRawDataSet" />
+  <xs:complexType name="AvLogRawDataSet">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q9="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q9:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Computer" nillable="true" type="tns:Computer" />
+          <xs:element minOccurs="0" name="ComputerId" type="xs:long" />
+          <xs:element minOccurs="0" name="ComputerReference" nillable="true" type="q9:EntityReferenceOfComputerrvh1PiYS" />
+          <xs:element minOccurs="0" name="Id" type="xs:long" />
+          <xs:element minOccurs="0" name="MalwareAction" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MalwareDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="MalwareLocation" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MalwareName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MalwareStatus" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Updated" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AvLogRawDataSet" nillable="true" type="tns:AvLogRawDataSet" />
+  <xs:complexType name="ArrayOfAvUpdatesRawDataSet">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="AvUpdatesRawDataSet" nillable="true" type="tns:AvUpdatesRawDataSet" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAvUpdatesRawDataSet" nillable="true" type="tns:ArrayOfAvUpdatesRawDataSet" />
+  <xs:complexType name="AvUpdatesRawDataSet">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q10="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q10:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Computer" nillable="true" type="tns:Computer" />
+          <xs:element minOccurs="0" name="ComputerId" type="xs:long" />
+          <xs:element minOccurs="0" name="ComputerReference" nillable="true" type="q10:EntityReferenceOfComputerrvh1PiYS" />
+          <xs:element minOccurs="0" name="Date" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Id" type="xs:long" />
+          <xs:element minOccurs="0" name="Status" type="xs:short" />
+          <xs:element minOccurs="0" name="Updated" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Version" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AvUpdatesRawDataSet" nillable="true" type="tns:AvUpdatesRawDataSet" />
+  <xs:complexType name="ArrayOfCisConfigRawDataSet">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CisConfigRawDataSet" nillable="true" type="tns:CisConfigRawDataSet" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCisConfigRawDataSet" nillable="true" type="tns:ArrayOfCisConfigRawDataSet" />
+  <xs:complexType name="CisConfigRawDataSet">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q11="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q11:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CisVersion" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ComponentEnabled" type="xs:boolean" />
+          <xs:element minOccurs="0" name="ComponentInstalled" type="xs:boolean" />
+          <xs:element minOccurs="0" name="ComponentName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Computer" nillable="true" type="tns:Computer" />
+          <xs:element minOccurs="0" name="ComputerId" type="xs:long" />
+          <xs:element minOccurs="0" name="ComputerReference" nillable="true" type="q11:EntityReferenceOfComputerrvh1PiYS" />
+          <xs:element minOccurs="0" name="Id" type="xs:long" />
+          <xs:element minOccurs="0" name="Updated" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CisConfigRawDataSet" nillable="true" type="tns:CisConfigRawDataSet" />
+  <xs:complexType name="ArrayOfComputerDetailsRawDataSet">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ComputerDetailsRawDataSet" nillable="true" type="tns:ComputerDetailsRawDataSet" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfComputerDetailsRawDataSet" nillable="true" type="tns:ArrayOfComputerDetailsRawDataSet" />
+  <xs:complexType name="ComputerDetailsRawDataSet">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q12="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q12:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CPU" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Computer" nillable="true" type="tns:Computer" />
+          <xs:element minOccurs="0" name="ComputerId" type="xs:long" />
+          <xs:element minOccurs="0" name="ComputerReference" nillable="true" type="q12:EntityReferenceOfComputerrvh1PiYS" />
+          <xs:element minOccurs="0" name="HDD" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Id" type="xs:long" />
+          <xs:element minOccurs="0" name="OsName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OsType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OsVersion" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RAM" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Updated" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ComputerDetailsRawDataSet" nillable="true" type="tns:ComputerDetailsRawDataSet" />
+  <xs:complexType name="ComputerGroup">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q13="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q13:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Computers" nillable="true" type="tns:ArrayOfComputer" />
+          <xs:element minOccurs="0" name="Deleted" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Id" type="xs:long" />
+          <xs:element minOccurs="0" name="InternetPolicyId" type="xs:long" />
+          <xs:element minOccurs="0" name="LocalPolicyId" type="xs:long" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Policy" nillable="true" type="tns:Policy" />
+          <xs:element minOccurs="0" name="Policy1" nillable="true" type="tns:Policy" />
+          <xs:element minOccurs="0" name="Policy1Reference" nillable="true" type="q13:EntityReferenceOfPolicyrvh1PiYS" />
+          <xs:element minOccurs="0" name="PolicyReference" nillable="true" type="q13:EntityReferenceOfPolicyrvh1PiYS" />
+          <xs:element minOccurs="0" name="Tasks" nillable="true" type="tns:ArrayOfTask" />
+          <xs:element minOccurs="0" name="TimeStamp" nillable="true" type="xs:base64Binary" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ComputerGroup" nillable="true" type="tns:ComputerGroup" />
+  <xs:complexType name="Policy">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q14="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q14:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AgentInfo_AllowComputerAdmin" type="xs:boolean" />
+          <xs:element minOccurs="0" name="AgentInfo_AllowLocalAdmin" type="xs:boolean" />
+          <xs:element minOccurs="0" name="AgentInfo_InternetServer" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AgentInfo_LocalPassword" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AgentInfo_LocalServer" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AgentInfo_PolicyPollingInterval" type="xs:int" />
+          <xs:element minOccurs="0" name="AgentInfo_PollingInterval" type="xs:int" />
+          <xs:element minOccurs="0" name="ComputerGroups" nillable="true" type="tns:ArrayOfComputerGroup" />
+          <xs:element minOccurs="0" name="ComputerGroups1" nillable="true" type="tns:ArrayOfComputerGroup" />
+          <xs:element minOccurs="0" name="Computers" nillable="true" type="tns:ArrayOfComputer" />
+          <xs:element minOccurs="0" name="Computers1" nillable="true" type="tns:ArrayOfComputer" />
+          <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Id" type="xs:long" />
+          <xs:element minOccurs="0" name="IsDefault" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Modified" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OverrideDefaultPolicy" type="xs:boolean" />
+          <xs:element minOccurs="0" name="PolicyProductInfoes" nillable="true" type="tns:ArrayOfPolicyProductInfo" />
+          <xs:element minOccurs="0" name="Uid" type="ser:guid" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Policy" nillable="true" type="tns:Policy" />
+  <xs:complexType name="ArrayOfComputerGroup">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ComputerGroup" nillable="true" type="tns:ComputerGroup" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfComputerGroup" nillable="true" type="tns:ArrayOfComputerGroup" />
+  <xs:complexType name="ArrayOfPolicyProductInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PolicyProductInfo" nillable="true" type="tns:PolicyProductInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPolicyProductInfo" nillable="true" type="tns:ArrayOfPolicyProductInfo" />
+  <xs:complexType name="PolicyProductInfo">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q15="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q15:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Id" type="xs:long" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Policy" nillable="true" type="tns:Policy" />
+          <xs:element minOccurs="0" name="PolicyComponentInfoes" nillable="true" type="tns:ArrayOfPolicyComponentInfo" />
+          <xs:element minOccurs="0" name="PolicyId" type="xs:long" />
+          <xs:element minOccurs="0" name="PolicyReference" nillable="true" type="q15:EntityReferenceOfPolicyrvh1PiYS" />
+          <xs:element minOccurs="0" name="Uid" type="ser:guid" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PolicyProductInfo" nillable="true" type="tns:PolicyProductInfo" />
+  <xs:complexType name="ArrayOfPolicyComponentInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PolicyComponentInfo" nillable="true" type="tns:PolicyComponentInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPolicyComponentInfo" nillable="true" type="tns:ArrayOfPolicyComponentInfo" />
+  <xs:complexType name="PolicyComponentInfo">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q16="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q16:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Id" type="xs:long" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PolicyProductInfo" nillable="true" type="tns:PolicyProductInfo" />
+          <xs:element minOccurs="0" name="PolicyProductInfoId" type="xs:long" />
+          <xs:element minOccurs="0" name="PolicyProductInfoReference" nillable="true" type="q16:EntityReferenceOfPolicyProductInforvh1PiYS" />
+          <xs:element minOccurs="0" name="SettingsAsXml" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PolicyComponentInfo" nillable="true" type="tns:PolicyComponentInfo" />
+  <xs:complexType name="ArrayOfTask">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Task" nillable="true" type="tns:Task" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTask" nillable="true" type="tns:ArrayOfTask" />
+  <xs:complexType name="Task">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q17="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q17:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ComputerGroups" nillable="true" type="tns:ArrayOfComputerGroup" />
+          <xs:element minOccurs="0" name="Computers" nillable="true" type="tns:ArrayOfComputer" />
+          <xs:element minOccurs="0" name="Created" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Deleted" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DomFilter" type="xs:int" />
+          <xs:element minOccurs="0" name="DowFilter" type="xs:int" />
+          <xs:element minOccurs="0" name="Enabled" type="xs:boolean" />
+          <xs:element minOccurs="0" name="FreqType" type="xs:short" />
+          <xs:element minOccurs="0" name="Id" type="xs:long" />
+          <xs:element minOccurs="0" name="Interval" type="xs:int" />
+          <xs:element minOccurs="0" name="IsInternal" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Modified" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="MoyFilter" type="xs:int" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Sequence" nillable="true" type="tns:Sequence" />
+          <xs:element minOccurs="0" name="SequenceId" type="xs:long" />
+          <xs:element minOccurs="0" name="SequenceReference" nillable="true" type="q17:EntityReferenceOfSequencervh1PiYS" />
+          <xs:element minOccurs="0" name="StartFrom" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="StartTime" type="xs:long" />
+          <xs:element minOccurs="0" name="TargetKind" type="xs:short" />
+          <xs:element minOccurs="0" name="TaskResults" nillable="true" type="tns:ArrayOfTaskResult" />
+          <xs:element minOccurs="0" name="TimeStamp" nillable="true" type="xs:base64Binary" />
+          <xs:element minOccurs="0" name="WomFilter" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Task" nillable="true" type="tns:Task" />
+  <xs:complexType name="Sequence">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q18="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q18:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Deleted" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Id" type="xs:long" />
+          <xs:element minOccurs="0" name="IsInternal" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SequenceActions" nillable="true" type="tns:ArrayOfSequenceAction" />
+          <xs:element minOccurs="0" name="SequenceResults" nillable="true" type="tns:ArrayOfSequenceResult" />
+          <xs:element minOccurs="0" name="Tasks" nillable="true" type="tns:ArrayOfTask" />
+          <xs:element minOccurs="0" name="TimeStamp" nillable="true" type="xs:base64Binary" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Sequence" nillable="true" type="tns:Sequence" />
+  <xs:complexType name="ArrayOfSequenceAction">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SequenceAction" nillable="true" type="tns:SequenceAction" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSequenceAction" nillable="true" type="tns:ArrayOfSequenceAction" />
+  <xs:complexType name="SequenceAction">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q19="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q19:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="FactoryUid" type="ser:guid" />
+          <xs:element minOccurs="0" name="Id" type="xs:long" />
+          <xs:element minOccurs="0" name="InputData" nillable="true" type="xs:base64Binary" />
+          <xs:element minOccurs="0" name="Sequence" nillable="true" type="tns:Sequence" />
+          <xs:element minOccurs="0" name="SequenceId" type="xs:long" />
+          <xs:element minOccurs="0" name="SequenceReference" nillable="true" type="q19:EntityReferenceOfSequencervh1PiYS" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SequenceAction" nillable="true" type="tns:SequenceAction" />
+  <xs:complexType name="ArrayOfSequenceResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SequenceResult" nillable="true" type="tns:SequenceResult" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSequenceResult" nillable="true" type="tns:ArrayOfSequenceResult" />
+  <xs:complexType name="SequenceResult">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q20="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q20:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ActionResults" nillable="true" type="tns:ArrayOfActionResult" />
+          <xs:element minOccurs="0" name="Completed" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Computer" nillable="true" type="tns:Computer" />
+          <xs:element minOccurs="0" name="ComputerReference" nillable="true" type="q20:EntityReferenceOfComputerrvh1PiYS" />
+          <xs:element minOccurs="0" name="Id" type="xs:long" />
+          <xs:element minOccurs="0" name="IsInternal" type="xs:boolean" />
+          <xs:element minOccurs="0" name="OwnerTaskResultId" type="xs:long" />
+          <xs:element minOccurs="0" name="Sequence" nillable="true" type="tns:Sequence" />
+          <xs:element minOccurs="0" name="SequenceId" type="xs:long" />
+          <xs:element minOccurs="0" name="SequenceReference" nillable="true" type="q20:EntityReferenceOfSequencervh1PiYS" />
+          <xs:element minOccurs="0" name="Started" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Status" type="xs:short" />
+          <xs:element minOccurs="0" name="TargetComputerId" type="xs:long" />
+          <xs:element minOccurs="0" name="TaskResult" nillable="true" type="tns:TaskResult" />
+          <xs:element minOccurs="0" name="TaskResultReference" nillable="true" type="q20:EntityReferenceOfTaskResultrvh1PiYS" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SequenceResult" nillable="true" type="tns:SequenceResult" />
+  <xs:complexType name="ArrayOfActionResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ActionResult" nillable="true" type="tns:ActionResult" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfActionResult" nillable="true" type="tns:ArrayOfActionResult" />
+  <xs:complexType name="ActionResult">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q21="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q21:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Completed" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="ErrorMessageAsXml" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FactoryUid" type="ser:guid" />
+          <xs:element minOccurs="0" name="Id" type="xs:long" />
+          <xs:element minOccurs="0" name="InputData" nillable="true" type="xs:base64Binary" />
+          <xs:element minOccurs="0" name="IsInternal" type="xs:boolean" />
+          <xs:element minOccurs="0" name="OwnerSequenceResultId" type="xs:long" />
+          <xs:element minOccurs="0" name="ResultCode" type="xs:int" />
+          <xs:element minOccurs="0" name="ResultData" nillable="true" type="xs:base64Binary" />
+          <xs:element minOccurs="0" name="SequenceResult" nillable="true" type="tns:SequenceResult" />
+          <xs:element minOccurs="0" name="SequenceResultReference" nillable="true" type="q21:EntityReferenceOfSequenceResultrvh1PiYS" />
+          <xs:element minOccurs="0" name="Started" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Status" type="xs:short" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ActionResult" nillable="true" type="tns:ActionResult" />
+  <xs:complexType name="TaskResult">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q22="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q22:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ActualTaskName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Completed" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Id" type="xs:long" />
+          <xs:element minOccurs="0" name="IsInternal" type="xs:boolean" />
+          <xs:element minOccurs="0" name="SequenceResults" nillable="true" type="tns:ArrayOfSequenceResult" />
+          <xs:element minOccurs="0" name="Started" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Status" type="xs:short" />
+          <xs:element minOccurs="0" name="Task" nillable="true" type="tns:Task" />
+          <xs:element minOccurs="0" name="TaskId" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="TaskReference" nillable="true" type="q22:EntityReferenceOfTaskrvh1PiYS" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TaskResult" nillable="true" type="tns:TaskResult" />
+  <xs:complexType name="ArrayOfTaskResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TaskResult" nillable="true" type="tns:TaskResult" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTaskResult" nillable="true" type="tns:ArrayOfTaskResult" />
+  <xs:complexType name="ArrayOfDefensePlusLogRawDataSet">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DefensePlusLogRawDataSet" nillable="true" type="tns:DefensePlusLogRawDataSet" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDefensePlusLogRawDataSet" nillable="true" type="tns:ArrayOfDefensePlusLogRawDataSet" />
+  <xs:complexType name="DefensePlusLogRawDataSet">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q23="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q23:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Action" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Application" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Computer" nillable="true" type="tns:Computer" />
+          <xs:element minOccurs="0" name="ComputerId" type="xs:long" />
+          <xs:element minOccurs="0" name="ComputerReference" nillable="true" type="q23:EntityReferenceOfComputerrvh1PiYS" />
+          <xs:element minOccurs="0" name="Date" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Id" type="xs:long" />
+          <xs:element minOccurs="0" name="Target" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Updated" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DefensePlusLogRawDataSet" nillable="true" type="tns:DefensePlusLogRawDataSet" />
+  <xs:complexType name="ArrayOfDiscoveryDataSet">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DiscoveryDataSet" nillable="true" type="tns:DiscoveryDataSet" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDiscoveryDataSet" nillable="true" type="tns:ArrayOfDiscoveryDataSet" />
+  <xs:complexType name="DiscoveryDataSet">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q24="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q24:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Computer" nillable="true" type="tns:Computer" />
+          <xs:element minOccurs="0" name="ComputerId" type="xs:long" />
+          <xs:element minOccurs="0" name="ComputerReference" nillable="true" type="q24:EntityReferenceOfComputerrvh1PiYS" />
+          <xs:element minOccurs="0" name="Discovered" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Id" type="xs:long" />
+          <xs:element minOccurs="0" name="InputData" nillable="true" type="xs:base64Binary" />
+          <xs:element minOccurs="0" name="ProfileUid" type="ser:guid" />
+          <xs:element minOccurs="0" name="Results" nillable="true" type="xs:base64Binary" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DiscoveryDataSet" nillable="true" type="tns:DiscoveryDataSet" />
+  <xs:complexType name="ArrayOfFirewallLogRawDataSet">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="FirewallLogRawDataSet" nillable="true" type="tns:FirewallLogRawDataSet" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfFirewallLogRawDataSet" nillable="true" type="tns:ArrayOfFirewallLogRawDataSet" />
+  <xs:complexType name="FirewallLogRawDataSet">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q25="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q25:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Action" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Application" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Computer" nillable="true" type="tns:Computer" />
+          <xs:element minOccurs="0" name="ComputerId" type="xs:long" />
+          <xs:element minOccurs="0" name="ComputerReference" nillable="true" type="q25:EntityReferenceOfComputerrvh1PiYS" />
+          <xs:element minOccurs="0" name="Date" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="DestinationIP" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DestinationPort" type="xs:int" />
+          <xs:element minOccurs="0" name="Details" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Id" type="xs:long" />
+          <xs:element minOccurs="0" name="Protocol" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SourceIP" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SourcePort" type="xs:int" />
+          <xs:element minOccurs="0" name="Type" type="xs:int" />
+          <xs:element minOccurs="0" name="Updated" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="FirewallLogRawDataSet" nillable="true" type="tns:FirewallLogRawDataSet" />
+  <xs:complexType name="ArrayOfInfectedItemRawDataSet">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="InfectedItemRawDataSet" nillable="true" type="tns:InfectedItemRawDataSet" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfInfectedItemRawDataSet" nillable="true" type="tns:ArrayOfInfectedItemRawDataSet" />
+  <xs:complexType name="InfectedItemRawDataSet">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q26="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q26:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Computer" nillable="true" type="tns:Computer" />
+          <xs:element minOccurs="0" name="ComputerId" type="xs:long" />
+          <xs:element minOccurs="0" name="ComputerReference" nillable="true" type="q26:EntityReferenceOfComputerrvh1PiYS" />
+          <xs:element minOccurs="0" name="Id" type="xs:long" />
+          <xs:element minOccurs="0" name="MalwareDetected" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="MalwareLocation" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MalwareName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Updated" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="InfectedItemRawDataSet" nillable="true" type="tns:InfectedItemRawDataSet" />
+  <xs:complexType name="ArrayOfInstalledSoftwareRawDataSet">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="InstalledSoftwareRawDataSet" nillable="true" type="tns:InstalledSoftwareRawDataSet" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfInstalledSoftwareRawDataSet" nillable="true" type="tns:ArrayOfInstalledSoftwareRawDataSet" />
+  <xs:complexType name="InstalledSoftwareRawDataSet">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q27="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q27:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Computer" nillable="true" type="tns:Computer" />
+          <xs:element minOccurs="0" name="ComputerId" type="xs:long" />
+          <xs:element minOccurs="0" name="ComputerReference" nillable="true" type="q27:EntityReferenceOfComputerrvh1PiYS" />
+          <xs:element minOccurs="0" name="Id" type="xs:long" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Publisher" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Updated" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Version" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="InstalledSoftwareRawDataSet" nillable="true" type="tns:InstalledSoftwareRawDataSet" />
+  <xs:complexType name="ArrayOfPolicyDeltaRawDataSet">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PolicyDeltaRawDataSet" nillable="true" type="tns:PolicyDeltaRawDataSet" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPolicyDeltaRawDataSet" nillable="true" type="tns:ArrayOfPolicyDeltaRawDataSet" />
+  <xs:complexType name="PolicyDeltaRawDataSet">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q28="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q28:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Computer" nillable="true" type="tns:Computer" />
+          <xs:element minOccurs="0" name="ComputerId" type="xs:long" />
+          <xs:element minOccurs="0" name="ComputerReference" nillable="true" type="q28:EntityReferenceOfComputerrvh1PiYS" />
+          <xs:element minOccurs="0" name="Discovered" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Id" type="xs:int" />
+          <xs:element minOccurs="0" name="Results" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Updated" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PolicyDeltaRawDataSet" nillable="true" type="tns:PolicyDeltaRawDataSet" />
+  <xs:complexType name="ArrayOfProductConnection">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ProductConnection" nillable="true" type="tns:ProductConnection" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfProductConnection" nillable="true" type="tns:ArrayOfProductConnection" />
+  <xs:complexType name="ProductConnection">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q29="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q29:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Components" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Computer" nillable="true" type="tns:Computer" />
+          <xs:element minOccurs="0" name="ComputerId" type="xs:long" />
+          <xs:element minOccurs="0" name="ComputerReference" nillable="true" type="q29:EntityReferenceOfComputerrvh1PiYS" />
+          <xs:element minOccurs="0" name="ConnectionDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Id" type="xs:long" />
+          <xs:element minOccurs="0" name="ProductName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ProductUid" type="ser:guid" />
+          <xs:element minOccurs="0" name="ProductVersion" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ProductConnection" nillable="true" type="tns:ProductConnection" />
+  <xs:complexType name="ArrayOfQuarantineItemRawDataSet">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="QuarantineItemRawDataSet" nillable="true" type="tns:QuarantineItemRawDataSet" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfQuarantineItemRawDataSet" nillable="true" type="tns:ArrayOfQuarantineItemRawDataSet" />
+  <xs:complexType name="QuarantineItemRawDataSet">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q30="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q30:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Computer" nillable="true" type="tns:Computer" />
+          <xs:element minOccurs="0" name="ComputerId" type="xs:long" />
+          <xs:element minOccurs="0" name="ComputerReference" nillable="true" type="q30:EntityReferenceOfComputerrvh1PiYS" />
+          <xs:element minOccurs="0" name="Id" type="xs:long" />
+          <xs:element minOccurs="0" name="ItemDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="ItemId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ItemLocation" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ItemName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Updated" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="QuarantineItemRawDataSet" nillable="true" type="tns:QuarantineItemRawDataSet" />
+</xs:schema>
